@@ -1,0 +1,3 @@
+Component      ,  Mouser number           , Note
+ICE40UP5K-SG48I,  842-ICE40UP5K-SG48I     , FPGA 5280 LUTS QFN-48 1.2V
+STM32F405RGT6  ,  511-STM32F405RGT6       , STM32F4 microcontroller
