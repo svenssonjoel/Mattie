@@ -1,3 +1,10 @@
-Component      ,  Mouser number           , Note
-ICE40UP5K-SG48I,  842-ICE40UP5K-SG48I     , FPGA 5280 LUTS QFN-48 1.2V
-STM32F405RGT6  ,  511-STM32F405RGT6       , STM32F4 microcontroller
+Component        ,  Mouser number           , Note,
+ICE40UP5K-SG48I  ,  842-ICE40UP5K-SG48I     , FPGA 5280 LUTS QFN-48 1.2V,
+STM32F405RGT6    ,  511-STM32F405RGT6       , STM32F4 microcontroller,
+MCP1826T-1202E/DC,  579-MCP1826T-1202EDC    , LDO-spänningsregulator 1A CMOS LDO Vout 1.2V ETR  (input 2.3 - 6V) (SOT-223-5),
+MCP1726T-3302E/SN,  579-MCP1726T3302E/SN    , LDO-spänningsregulator 1A 3.3V Vout Extended Temp (input 2.3 - 6V) (SOIC 8),
+
+
+
+
+
