@@ -1,5 +1,15 @@
 
 Things to figure out:
 
-- How many amps needed on the powersupply for FPGA:
-- 
+- How many amps needed on the powersupply for FPGA?
+- What is needed to "program" the FPGA?
+
+
+
+Power rails:
+
+- 1.2V VCC
+- 2.5V VPP_2v5
+- 1.2V VCC_PLL
+- 3.3V VCCIO
+
