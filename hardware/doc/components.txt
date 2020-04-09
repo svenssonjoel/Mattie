@@ -3,8 +3,10 @@ ICE40UP5K-SG48I    ,  842-ICE40UP5K-SG48I     , FPGA 5280 LUTS QFN-48 1.2V,
 STM32F405RGT6      ,  511-STM32F405RGT6       , STM32F4 microcontroller,
 MCP1826T-1202E/DC  ,  579-MCP1826T-1202EDC    , LDO-spänningsregulator 1A CMOS LDO Vout 1.2V ETR  (input 2.3 - 6V) (SOT-223-5),
 MCP16311T-E/MS     ,  579-MCP16311T-E/MS      , Switchande regulator 4.4V -  30V Input, 1A, PWM/PFM Synchronous Buck Switching Regulator  (MSOP-8)
-ADP2303ARDZ-5.0-R7 ,  584-ADP2303ARDZ5.0R7    , Switchande spänningsregulatorer 3A Non-Sync Step Down DC-DC Converter (input <= 20V) (SOIC-8) (Om vi vill använda en extern power supply för att generera 5V)
+ADP2303ARDZ-5.0-R7 ,  584-ADP2303ARDZ5.0R7    , Switchande spänningsregulatorer 3A Non-Sync Step Down DC-DC Converter (input <= 20V) (SOIC-8) (Om vi vill använda en extern power supply för att generera 5V),
+163-179PH-EX       ,  163-179PH-EX            , DC-strömkontakter PCB 2.1MM
 
+ 
 
 
 
