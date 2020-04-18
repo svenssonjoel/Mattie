@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 3 4
 Title "Mattie Version 0"
 Date ""
 Rev "0"
@@ -13,4 +13,358 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5E9E4C9D
+P 9000 5750
+AR Path="/5E9881B4/5E9E4C9D" Ref="J?"  Part="1" 
+AR Path="/5E988213/5E9E4C9D" Ref="J?"  Part="1" 
+F 0 "J?" V 9154 5462 50  0000 R CNN
+F 1 "Power" V 9063 5462 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 9000 5750 50  0001 C CNN
+F 3 "~" H 9000 5750 50  0001 C CNN
+	1    9000 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E9E4CA3
+P 8650 5400
+AR Path="/5E9881B4/5E9E4CA3" Ref="#PWR?"  Part="1" 
+AR Path="/5E988213/5E9E4CA3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8650 5250 50  0001 C CNN
+F 1 "+3V3" H 8665 5573 50  0000 C CNN
+F 2 "" H 8650 5400 50  0001 C CNN
+F 3 "" H 8650 5400 50  0001 C CNN
+	1    8650 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5550 8650 5400
+Wire Wire Line
+	9000 5550 8900 5400
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5E9E4CAB
+P 9450 5400
+AR Path="/5E9881B4/5E9E4CAB" Ref="#PWR?"  Part="1" 
+AR Path="/5E988213/5E9E4CAB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9450 5250 50  0001 C CNN
+F 1 "+1V2" H 9465 5573 50  0000 C CNN
+F 2 "" H 9450 5400 50  0001 C CNN
+F 3 "" H 9450 5400 50  0001 C CNN
+	1    9450 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9E4CB1
+P 9050 5150
+AR Path="/5E9881B4/5E9E4CB1" Ref="#PWR?"  Part="1" 
+AR Path="/5E988213/5E9E4CB1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9050 4900 50  0001 C CNN
+F 1 "GND" H 9055 4977 50  0000 C CNN
+F 2 "" H 9050 5150 50  0001 C CNN
+F 3 "" H 9050 5150 50  0001 C CNN
+	1    9050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5550 9450 5400
+Wire Wire Line
+	9100 5550 9200 5400
+Wire Wire Line
+	9200 5400 9200 5050
+Wire Wire Line
+	9200 5050 9050 5050
+Wire Wire Line
+	9050 5050 9050 5150
+Wire Wire Line
+	8900 5400 8900 5050
+Wire Wire Line
+	8900 5050 9050 5050
+Connection ~ 9050 5050
+Text HLabel 2000 2100 0    50   Input ~ 0
+5V
+Wire Wire Line
+	2000 2100 2050 2100
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E9E8811
+P 2150 2100
+F 0 "#FLG?" H 2150 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 2273 50  0000 C CNN
+F 2 "" H 2150 2100 50  0001 C CNN
+F 3 "~" H 2150 2100 50  0001 C CNN
+	1    2150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1826S U?
+U 1 1 5E9E9D14
+P 3700 2700
+F 0 "U?" H 3700 2942 50  0000 C CNN
+F 1 "MCP1826S-3302" H 3700 2851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3600 2850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf" H 3700 2950 50  0001 C CNN
+F 4 " 579-MCP1826S-3302EDB " H 3700 2700 50  0001 C CNN "OrderN"
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1826S U?
+U 1 1 5E9EACAB
+P 3700 3600
+F 0 "U?" H 3700 3842 50  0000 C CNN
+F 1 "MCP1826S-1202" H 3700 3751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3600 3750 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf" H 3700 3850 50  0001 C CNN
+F 4 " 579-MCP1826S-1202EDB" H 3700 3600 50  0001 C CNN "OrderN"
+	1    3700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E9F013F
+P 3100 2850
+AR Path="/5E994520/5E9F013F" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5E9F013F" Ref="C?"  Part="1" 
+AR Path="/5E988213/5E9F013F" Ref="C?"  Part="1" 
+F 0 "C?" H 3192 2896 50  0000 L CNN
+F 1 "2.2u" H 3192 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 2850 50  0001 C CNN
+F 3 "~" H 3100 2850 50  0001 C CNN
+F 4 " 963-TMK107ABJ225MA-T " H 3100 2850 50  0001 C CNN "OrderN"
+	1    3100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E9F0176
+P 2800 2850
+AR Path="/5E994520/5E9F0176" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5E9F0176" Ref="C?"  Part="1" 
+AR Path="/5E988213/5E9F0176" Ref="C?"  Part="1" 
+F 0 "C?" H 2892 2896 50  0000 L CNN
+F 1 "2.2u" H 2892 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 2850 50  0001 C CNN
+F 3 "~" H 2800 2850 50  0001 C CNN
+F 4 " 963-TMK107ABJ225MA-T " H 2800 2850 50  0001 C CNN "OrderN"
+	1    2800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E9F0723
+P 4250 2850
+AR Path="/5E994520/5E9F0723" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5E9F0723" Ref="C?"  Part="1" 
+AR Path="/5E988213/5E9F0723" Ref="C?"  Part="1" 
+F 0 "C?" H 4342 2896 50  0000 L CNN
+F 1 "2.2u" H 4342 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4250 2850 50  0001 C CNN
+F 3 "~" H 4250 2850 50  0001 C CNN
+F 4 " 963-TMK107ABJ225MA-T " H 4250 2850 50  0001 C CNN "OrderN"
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E9F0B20
+P 3100 3750
+AR Path="/5E994520/5E9F0B20" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5E9F0B20" Ref="C?"  Part="1" 
+AR Path="/5E988213/5E9F0B20" Ref="C?"  Part="1" 
+F 0 "C?" H 3192 3796 50  0000 L CNN
+F 1 "2.2u" H 3192 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 3750 50  0001 C CNN
+F 3 "~" H 3100 3750 50  0001 C CNN
+F 4 " 963-TMK107ABJ225MA-T " H 3100 3750 50  0001 C CNN "OrderN"
+	1    3100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E9F0EC9
+P 2800 3750
+AR Path="/5E994520/5E9F0EC9" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5E9F0EC9" Ref="C?"  Part="1" 
+AR Path="/5E988213/5E9F0EC9" Ref="C?"  Part="1" 
+F 0 "C?" H 2892 3796 50  0000 L CNN
+F 1 "2.2u" H 2892 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 3750 50  0001 C CNN
+F 3 "~" H 2800 3750 50  0001 C CNN
+F 4 " 963-TMK107ABJ225MA-T " H 2800 3750 50  0001 C CNN "OrderN"
+	1    2800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E9F1302
+P 4250 3800
+AR Path="/5E994520/5E9F1302" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5E9F1302" Ref="C?"  Part="1" 
+AR Path="/5E988213/5E9F1302" Ref="C?"  Part="1" 
+F 0 "C?" H 4342 3846 50  0000 L CNN
+F 1 "2.2u" H 4342 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4250 3800 50  0001 C CNN
+F 3 "~" H 4250 3800 50  0001 C CNN
+F 4 " 963-TMK107ABJ225MA-T " H 4250 3800 50  0001 C CNN "OrderN"
+	1    4250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4250 2700
+Wire Wire Line
+	4250 2700 4000 2700
+Wire Wire Line
+	3400 2700 3100 2700
+Wire Wire Line
+	2800 2700 2800 2750
+Wire Wire Line
+	3100 2750 3100 2700
+Connection ~ 3100 2700
+Wire Wire Line
+	3100 2700 2800 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5E9F2293
+P 3700 3100
+F 0 "#PWR?" H 3700 2850 50  0001 C CNN
+F 1 "GND" H 3705 2927 50  0000 C CNN
+F 2 "" H 3700 3100 50  0001 C CNN
+F 3 "" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2950 4250 3050
+Wire Wire Line
+	4250 3050 3700 3050
+Wire Wire Line
+	3700 3050 3700 3100
+Wire Wire Line
+	3700 3050 3100 3050
+Wire Wire Line
+	2800 3050 2800 2950
+Connection ~ 3700 3050
+Wire Wire Line
+	3100 2950 3100 3050
+Connection ~ 3100 3050
+Wire Wire Line
+	3100 3050 2800 3050
+Wire Wire Line
+	3700 3000 3700 3050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E9F2F43
+P 4250 2550
+F 0 "#PWR?" H 4250 2400 50  0001 C CNN
+F 1 "+3V3" H 4265 2723 50  0000 C CNN
+F 2 "" H 4250 2550 50  0001 C CNN
+F 3 "" H 4250 2550 50  0001 C CNN
+	1    4250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2700 4250 2600
+Connection ~ 4250 2700
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E9F395D
+P 4250 2600
+F 0 "#FLG?" H 4250 2675 50  0001 C CNN
+F 1 "PWR_FLAG" V 4250 2728 50  0000 L CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "~" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 4250 2600
+Wire Wire Line
+	4250 2600 4250 2550
+Wire Wire Line
+	4250 3700 4250 3600
+Wire Wire Line
+	4250 3600 4000 3600
+Wire Wire Line
+	3400 3600 3100 3600
+Wire Wire Line
+	2800 3600 2800 3650
+Wire Wire Line
+	3100 3650 3100 3600
+Connection ~ 3100 3600
+Wire Wire Line
+	3100 3600 2800 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5E9F4C59
+P 3700 4000
+F 0 "#PWR?" H 3700 3750 50  0001 C CNN
+F 1 "GND" H 3705 3827 50  0000 C CNN
+F 2 "" H 3700 4000 50  0001 C CNN
+F 3 "" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3900 4250 3950
+Wire Wire Line
+	4250 3950 3700 3950
+Wire Wire Line
+	3700 3950 3700 3900
+Wire Wire Line
+	3700 3950 3700 4000
+Connection ~ 3700 3950
+Wire Wire Line
+	3700 3950 3100 3950
+Wire Wire Line
+	3100 3950 3100 3850
+Wire Wire Line
+	3100 3950 2800 3950
+Wire Wire Line
+	2800 3950 2800 3850
+Connection ~ 3100 3950
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5E9F69E0
+P 4250 3450
+F 0 "#PWR?" H 4250 3300 50  0001 C CNN
+F 1 "+1V2" H 4265 3623 50  0000 C CNN
+F 2 "" H 4250 3450 50  0001 C CNN
+F 3 "" H 4250 3450 50  0001 C CNN
+	1    4250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3600 4250 3500
+Connection ~ 4250 3600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E9F74F1
+P 4250 3500
+F 0 "#FLG?" H 4250 3575 50  0001 C CNN
+F 1 "PWR_FLAG" V 4250 3628 50  0000 L CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "~" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	0    1    1    0   
+$EndComp
+Connection ~ 4250 3500
+Wire Wire Line
+	4250 3500 4250 3450
+Wire Wire Line
+	2050 2100 2050 2700
+Wire Wire Line
+	2050 2700 2800 2700
+Connection ~ 2050 2100
+Wire Wire Line
+	2050 2100 2150 2100
+Connection ~ 2800 2700
+Wire Wire Line
+	2050 2700 2050 3600
+Wire Wire Line
+	2050 3600 2800 3600
+Connection ~ 2050 2700
+Connection ~ 2800 3600
 $EndSCHEMATC

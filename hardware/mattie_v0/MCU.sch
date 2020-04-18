@@ -855,7 +855,7 @@ L Connector_Generic:Conn_02x04_Odd_Even J1
 U 1 1 5EA17BAA
 P 1800 5550
 F 0 "J1" V 1804 5730 50  0000 L CNN
-F 1 "Conn_02x04_Odd_Even" V 1895 5730 50  0000 L CNN
+F 1 "GPIO" V 1895 5730 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical" H 1800 5550 50  0001 C CNN
 F 3 "~" H 1800 5550 50  0001 C CNN
 	1    1800 5550

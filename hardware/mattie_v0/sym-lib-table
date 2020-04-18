@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name favorites)(type Legacy)(uri ${KIPRJMOD}/lib/favorites.lib)(options "")(descr ""))
+  (lib (name ncv8705)(type Legacy)(uri /home/joels/Current/rise_sdvp/Hardware/f9p_board/ncv8705.lib)(options "")(descr ""))
+  (lib (name TPS54561DPRR)(type Legacy)(uri /home/joels/Current/rise_sdvp/Hardware/f9p_board/TPS54561DPRR.lib)(options "")(descr ""))
+  (lib (name 3PIN_DIODE)(type Legacy)(uri /home/joels/Current/rise_sdvp/Hardware/f9p_board/3PIN_DIODE.lib)(options "")(descr ""))
 )
