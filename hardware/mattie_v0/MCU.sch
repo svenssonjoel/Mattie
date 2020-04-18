@@ -19,7 +19,7 @@ U 1 1 5E988641
 P 5850 3550
 F 0 "U1" H 5850 5987 60  0000 C CNN
 F 1 "STM32F40X_LQFP64" H 5850 5881 60  0000 C CNN
-F 2 "" H 5850 3550 60  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5850 3550 60  0000 C CNN
 F 3 "" H 5850 3550 60  0000 C CNN
 	1    5850 3550
 	1    0    0    -1  
@@ -162,7 +162,6 @@ Wire Wire Line
 	7100 2400 7400 2400
 Wire Wire Line
 	7600 2400 7750 2400
-NoConn ~ 7100 2850
 $Comp
 L power:GND #PWR06
 U 1 1 5E9C7FB1
@@ -178,8 +177,6 @@ Wire Wire Line
 	7100 2100 7300 2100
 Text Label 7100 2000 0    50   ~ 0
 BOOT0
-NoConn ~ 7100 1500
-NoConn ~ 7100 1400
 $Comp
 L power:GND #PWR?
 U 1 1 5E9CAD08
@@ -689,22 +686,18 @@ Text Label 3250 3800 0    50   ~ 0
 LED_YELLOW
 Wire Wire Line
 	3100 3800 3250 3800
-Text Label 4600 3600 2    50   ~ 0
-GPIO0
-Text Label 4600 3700 2    50   ~ 0
-GPIO1
 Text Label 4600 3800 2    50   ~ 0
-GPIO2
+GPIO0
 Text Label 4600 3900 2    50   ~ 0
-GPIO3
+GPIO1
 Text Label 4600 4000 2    50   ~ 0
-GPIO4
+GPIO2
 Text Label 4600 5300 2    50   ~ 0
-GPIO5
+GPIO3
 Text Label 4600 5400 2    50   ~ 0
-GPIO6
+GPIO4
 Text Label 4600 5500 2    50   ~ 0
-GPIO7
+GPIO5
 NoConn ~ 4600 5700
 $Comp
 L power:GND #PWR?
@@ -877,4 +870,14 @@ Text Label 1600 5350 1    50   ~ 0
 GPIO6
 Text Label 1600 5850 3    50   ~ 0
 GPIO7
+Text HLabel 4600 3600 0    50   Input ~ 0
+REG1V2_ON
+Text HLabel 4600 3700 0    50   Input ~ 0
+PWRGD1V2
+Text Label 7100 1400 0    50   ~ 0
+GPIO6
+Text Label 7100 1500 0    50   ~ 0
+GPIO7
+Text HLabel 7100 2850 2    50   Input ~ 0
+SPI_SS
 $EndSCHEMATC
