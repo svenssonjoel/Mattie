@@ -69,49 +69,49 @@ Text HLabel 5050 1650 0    50   Input ~ 0
 RESET
 Text HLabel 6050 1650 2    50   Input ~ 0
 DONE
-Text HLabel 10050 2700 0    50   Input ~ 0
+Text HLabel 5050 1950 0    50   Input ~ 0
 DAT0
-Text HLabel 10050 2800 0    50   Input ~ 0
+Text HLabel 5050 2050 0    50   Input ~ 0
 DAT1
-Text HLabel 10050 2900 0    50   Input ~ 0
+Text HLabel 5050 2150 0    50   Input ~ 0
 DAT2
-Text HLabel 10050 3000 0    50   Input ~ 0
+Text HLabel 5050 2250 0    50   Input ~ 0
 DAT3
-Text HLabel 10050 3100 0    50   Input ~ 0
+Text HLabel 5050 2350 0    50   Input ~ 0
 DAT4
-Text HLabel 10050 3200 0    50   Input ~ 0
+Text HLabel 5050 2450 0    50   Input ~ 0
 DAT5
-Text HLabel 10050 3300 0    50   Input ~ 0
+Text HLabel 5050 2550 0    50   Input ~ 0
 DAT6
-Text HLabel 10050 3400 0    50   Input ~ 0
+Text HLabel 5050 2650 0    50   Input ~ 0
 DAT7
-Text HLabel 10050 3500 0    50   Input ~ 0
+Text HLabel 3050 4750 0    50   Input ~ 0
 DAT8
-Text HLabel 10050 3600 0    50   Input ~ 0
+Text HLabel 3050 4850 0    50   Input ~ 0
 DAT9
-Text HLabel 10050 3700 0    50   Input ~ 0
+Text HLabel 3050 4950 0    50   Input ~ 0
 DAT10
-Text HLabel 10050 3800 0    50   Input ~ 0
+Text HLabel 3050 5050 0    50   Input ~ 0
 DAT11
-Text HLabel 10050 3900 0    50   Input ~ 0
+Text HLabel 3100 1700 0    50   Input ~ 0
 DAT12
-Text HLabel 10050 4000 0    50   Input ~ 0
+Text HLabel 3100 1800 0    50   Input ~ 0
 DAT13
-Text HLabel 10050 4100 0    50   Input ~ 0
+Text HLabel 3100 1900 0    50   Input ~ 0
 DAT14
-Text HLabel 10050 4200 0    50   Input ~ 0
+Text HLabel 3100 2000 0    50   Input ~ 0
 DAT15
-Text HLabel 10000 4500 0    50   Input ~ 0
+Text HLabel 5050 2750 0    50   Input ~ 0
 AUX0
-Text HLabel 10000 4600 0    50   Input ~ 0
+Text HLabel 5050 2850 0    50   Input ~ 0
 AUX1
-Text HLabel 10000 4700 0    50   Input ~ 0
+Text HLabel 3050 5150 0    50   Input ~ 0
 AUX2
-Text HLabel 10000 4800 0    50   Input ~ 0
+Text HLabel 3050 5250 0    50   Input ~ 0
 AUX3
-Text HLabel 10000 4900 0    50   Input ~ 0
+Text HLabel 3100 2100 0    50   Input ~ 0
 AUX4
-Text HLabel 10000 5000 0    50   Input ~ 0
+Text HLabel 3100 2200 0    50   Input ~ 0
 AUX5
 $Bitmap
 Pos 7700 3650
@@ -1124,10 +1124,10 @@ F5 AA 94 92 D2 58 1F 05 8A D0 61 F4 F5 8D BC 90 90 19 E3 B3 FB 92 03 07 D0 B1 3E
 EndData
 $EndBitmap
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 5EA06F5E
 P 4950 5000
-F 0 "#PWR?" H 4950 4750 50  0001 C CNN
+F 0 "#PWR0112" H 4950 4750 50  0001 C CNN
 F 1 "GND" H 4955 4827 50  0000 C CNN
 F 2 "" H 4950 5000 50  0001 C CNN
 F 3 "" H 4950 5000 50  0001 C CNN
@@ -1138,4 +1138,414 @@ Wire Wire Line
 	5050 4850 4950 4850
 Wire Wire Line
 	4950 4850 4950 5000
+$Comp
+L power:+1V2 #PWR021
+U 1 1 5EA08F75
+P 6400 4800
+F 0 "#PWR021" H 6400 4650 50  0001 C CNN
+F 1 "+1V2" H 6415 4973 50  0000 C CNN
+F 2 "" H 6400 4800 50  0001 C CNN
+F 3 "" H 6400 4800 50  0001 C CNN
+	1    6400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4850 6200 4850
+$Comp
+L favorites:DSC1004 U5
+U 1 1 5EA0BC03
+P 1700 3800
+F 0 "U5" H 1700 4115 50  0000 C CNN
+F 1 "DSC1004" H 1700 4024 50  0000 C CNN
+F 2 "favorites:DSC1004" H 1750 3800 50  0001 C CNN
+F 3 "" H 1750 3800 50  0001 C CNN
+F 4 " 998-1004DC1-100.0000 " H 1700 3800 50  0001 C CNN "OrderN"
+	1    1700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5EA0C20A
+P 2250 3600
+F 0 "#PWR019" H 2250 3450 50  0001 C CNN
+F 1 "+3V3" H 2265 3773 50  0000 C CNN
+F 2 "" H 2250 3600 50  0001 C CNN
+F 3 "" H 2250 3600 50  0001 C CNN
+	1    2250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3750 2250 3750
+Wire Wire Line
+	2250 3750 2250 3600
+$Comp
+L power:GND #PWR018
+U 1 1 5EA0D6A4
+P 1200 4050
+F 0 "#PWR018" H 1200 3800 50  0001 C CNN
+F 1 "GND" H 1205 3877 50  0000 C CNN
+F 2 "" H 1200 4050 50  0001 C CNN
+F 3 "" H 1200 4050 50  0001 C CNN
+	1    1200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3950 1200 3950
+Wire Wire Line
+	1200 3950 1200 4050
+$Comp
+L Device:C_Small C?
+U 1 1 5EA14BD2
+P 2500 3600
+AR Path="/5E9881B4/5EA14BD2" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA14BD2" Ref="C18"  Part="1" 
+F 0 "C18" V 2350 3600 50  0000 C CNN
+F 1 "0.1u" V 2600 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2500 3600 50  0001 C CNN
+F 3 "~" H 2500 3600 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 2500 3600 50  0001 C CNN "Mouser"
+	1    2500 3600
+	0    -1   -1   0   
+$EndComp
+Text Label 2100 3950 0    50   ~ 0
+CLK_100MHz
+Wire Wire Line
+	2250 3600 2400 3600
+Connection ~ 2250 3600
+$Comp
+L power:GND #PWR020
+U 1 1 5EA15CD5
+P 2750 3650
+F 0 "#PWR020" H 2750 3400 50  0001 C CNN
+F 1 "GND" H 2755 3477 50  0000 C CNN
+F 2 "" H 2750 3650 50  0001 C CNN
+F 3 "" H 2750 3650 50  0001 C CNN
+	1    2750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3650 2750 3600
+Wire Wire Line
+	2750 3600 2600 3600
+$Comp
+L Device:C_Small C?
+U 1 1 5EA1CB59
+P 6400 5000
+AR Path="/5E9881B4/5EA1CB59" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA1CB59" Ref="C24"  Part="1" 
+F 0 "C24" V 6171 5000 50  0000 C CNN
+F 1 "0.1u" V 6262 5000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 5000 50  0001 C CNN
+F 3 "~" H 6400 5000 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 6400 5000 50  0001 C CNN "Mouser"
+	1    6400 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 4800 6400 4850
+Wire Wire Line
+	6400 4850 6400 4900
+Connection ~ 6400 4850
+$Comp
+L power:GND #PWR031
+U 1 1 5EA1D4C2
+P 6400 5250
+F 0 "#PWR031" H 6400 5000 50  0001 C CNN
+F 1 "GND" H 6405 5077 50  0000 C CNN
+F 2 "" H 6400 5250 50  0001 C CNN
+F 3 "" H 6400 5250 50  0001 C CNN
+	1    6400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5100 6400 5200
+Wire Wire Line
+	5850 4950 6000 4950
+Wire Wire Line
+	6200 4950 6200 4850
+Connection ~ 6200 4850
+Wire Wire Line
+	6200 4850 6400 4850
+$Comp
+L Device:C_Small C?
+U 1 1 5EA1DFB9
+P 6000 5050
+AR Path="/5E9881B4/5EA1DFB9" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA1DFB9" Ref="C22"  Part="1" 
+F 0 "C22" V 5771 5050 50  0000 C CNN
+F 1 "0.1u" V 5862 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6000 5050 50  0001 C CNN
+F 3 "~" H 6000 5050 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 6000 5050 50  0001 C CNN "Mouser"
+	1    6000 5050
+	-1   0    0    1   
+$EndComp
+Connection ~ 6000 4950
+Wire Wire Line
+	6000 4950 6200 4950
+Wire Wire Line
+	6400 5200 6000 5200
+Wire Wire Line
+	6000 5200 6000 5150
+Connection ~ 6400 5200
+Wire Wire Line
+	6400 5200 6400 5250
+$Comp
+L power:+3V3 #PWR028
+U 1 1 5EA1EE70
+P 5950 4400
+F 0 "#PWR028" H 5950 4250 50  0001 C CNN
+F 1 "+3V3" H 5965 4573 50  0000 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4750 5950 4750
+Wire Wire Line
+	5950 4750 5950 4450
+$Comp
+L Device:C_Small C?
+U 1 1 5EA1FBAF
+P 6050 4450
+AR Path="/5E9881B4/5EA1FBAF" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA1FBAF" Ref="C23"  Part="1" 
+F 0 "C23" V 5821 4450 50  0000 C CNN
+F 1 "0.1u" V 5912 4450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 4450 50  0001 C CNN
+F 3 "~" H 6050 4450 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 6050 4450 50  0001 C CNN "Mouser"
+	1    6050 4450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5950 4450
+Wire Wire Line
+	5950 4450 5950 4400
+$Comp
+L power:GND #PWR030
+U 1 1 5EA202C5
+P 6200 4550
+F 0 "#PWR030" H 6200 4300 50  0001 C CNN
+F 1 "GND" H 6205 4377 50  0000 C CNN
+F 2 "" H 6200 4550 50  0001 C CNN
+F 3 "" H 6200 4550 50  0001 C CNN
+	1    6200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4550 6200 4450
+Wire Wire Line
+	6200 4450 6150 4450
+$Comp
+L power:+3V3 #PWR023
+U 1 1 5EA22C80
+P 3450 4100
+F 0 "#PWR023" H 3450 3950 50  0001 C CNN
+F 1 "+3V3" H 3465 4273 50  0000 C CNN
+F 2 "" H 3450 4100 50  0001 C CNN
+F 3 "" H 3450 4100 50  0001 C CNN
+	1    3450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4250 3450 4100
+$Comp
+L Device:C_Small C?
+U 1 1 5EA22C89
+P 3700 4100
+AR Path="/5E9881B4/5EA22C89" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA22C89" Ref="C19"  Part="1" 
+F 0 "C19" V 3550 4100 50  0000 C CNN
+F 1 "0.1u" V 3800 4100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 4100 50  0001 C CNN
+F 3 "~" H 3700 4100 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 3700 4100 50  0001 C CNN "Mouser"
+	1    3700 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 4100 3600 4100
+Connection ~ 3450 4100
+$Comp
+L power:GND #PWR025
+U 1 1 5EA22C91
+P 3950 4150
+F 0 "#PWR025" H 3950 3900 50  0001 C CNN
+F 1 "GND" H 3955 3977 50  0000 C CNN
+F 2 "" H 3950 4150 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4150 3950 4100
+Wire Wire Line
+	3950 4100 3800 4100
+$Comp
+L power:+3V3 #PWR024
+U 1 1 5EA23A27
+P 3500 1050
+F 0 "#PWR024" H 3500 900 50  0001 C CNN
+F 1 "+3V3" H 3515 1223 50  0000 C CNN
+F 2 "" H 3500 1050 50  0001 C CNN
+F 3 "" H 3500 1050 50  0001 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1200 3500 1050
+$Comp
+L Device:C_Small C?
+U 1 1 5EA23A30
+P 3750 1050
+AR Path="/5E9881B4/5EA23A30" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA23A30" Ref="C20"  Part="1" 
+F 0 "C20" V 3600 1050 50  0000 C CNN
+F 1 "0.1u" V 3850 1050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3750 1050 50  0001 C CNN
+F 3 "~" H 3750 1050 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 3750 1050 50  0001 C CNN "Mouser"
+	1    3750 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 1050 3650 1050
+Connection ~ 3500 1050
+$Comp
+L power:GND #PWR026
+U 1 1 5EA23A38
+P 4000 1100
+F 0 "#PWR026" H 4000 850 50  0001 C CNN
+F 1 "GND" H 4005 927 50  0000 C CNN
+F 2 "" H 4000 1100 50  0001 C CNN
+F 3 "" H 4000 1100 50  0001 C CNN
+	1    4000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1100 4000 1050
+Wire Wire Line
+	4000 1050 3850 1050
+$Comp
+L power:+3V3 #PWR027
+U 1 1 5EA2478A
+P 5550 1100
+F 0 "#PWR027" H 5550 950 50  0001 C CNN
+F 1 "+3V3" H 5565 1273 50  0000 C CNN
+F 2 "" H 5550 1100 50  0001 C CNN
+F 3 "" H 5550 1100 50  0001 C CNN
+	1    5550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1250 5550 1100
+$Comp
+L Device:C_Small C?
+U 1 1 5EA24793
+P 5800 1100
+AR Path="/5E9881B4/5EA24793" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA24793" Ref="C21"  Part="1" 
+F 0 "C21" V 5650 1100 50  0000 C CNN
+F 1 "0.1u" V 5900 1100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 1100 50  0001 C CNN
+F 3 "~" H 5800 1100 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 5800 1100 50  0001 C CNN "Mouser"
+	1    5800 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 1100 5700 1100
+Connection ~ 5550 1100
+$Comp
+L power:GND #PWR029
+U 1 1 5EA2479B
+P 6050 1150
+F 0 "#PWR029" H 6050 900 50  0001 C CNN
+F 1 "GND" H 6055 977 50  0000 C CNN
+F 2 "" H 6050 1150 50  0001 C CNN
+F 3 "" H 6050 1150 50  0001 C CNN
+	1    6050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1150 6050 1100
+Wire Wire Line
+	6050 1100 5900 1100
+Text Label 3100 2600 2    50   ~ 0
+CLK_100MHz
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even GPIO1
+U 1 1 5EA2C490
+P 1550 2200
+F 0 "GPIO1" H 1600 2617 50  0000 C CNN
+F 1 "GPIO" H 1600 2526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 1550 2200 50  0001 C CNN
+F 3 "~" H 1550 2200 50  0001 C CNN
+	1    1550 2200
+	1    0    0    -1  
+$EndComp
+Text Label 3100 3100 2    50   ~ 0
+RGB0
+Text Label 3100 3200 2    50   ~ 0
+RGB1
+Text Label 3100 3300 2    50   ~ 0
+RGB2
+Text Label 1850 2400 0    50   ~ 0
+RGB0
+Text Label 1350 2500 2    50   ~ 0
+RGB1
+Text Label 1850 2500 0    50   ~ 0
+RGB2
+Text Label 3100 2300 2    50   ~ 0
+IOT_43a
+Text Label 1350 2000 2    50   ~ 0
+IOT_43a
+Text Label 3100 2400 2    50   ~ 0
+IOT_44b
+Text Label 1850 2000 0    50   ~ 0
+IOT_44b
+Text Label 3100 2500 2    50   ~ 0
+IOT_45a
+Text Label 1350 2100 2    50   ~ 0
+IOT_45a
+Text Label 3100 2700 2    50   ~ 0
+IOT_48b
+Text Label 1850 2100 0    50   ~ 0
+IOT_48b
+Text Label 3100 2800 2    50   ~ 0
+IOT_49a
+Text Label 1350 2200 2    50   ~ 0
+IOT_49a
+Text Label 3100 2900 2    50   ~ 0
+IOT_50b
+Text Label 1850 2200 0    50   ~ 0
+IOT_50b
+Text Label 3100 3000 2    50   ~ 0
+IOT_51a
+Text Label 1350 2300 2    50   ~ 0
+IOT_51a
+Text Label 3050 5350 2    50   ~ 0
+IOT_8a
+Text Label 1850 2300 0    50   ~ 0
+IOT_8a
+Text Label 3050 5450 2    50   ~ 0
+IOT_9b
+Text Label 1350 2400 2    50   ~ 0
+IOT_9b
+$Comp
+L power:+3V3 #PWR022
+U 1 1 5EA32987
+P 1200 3600
+F 0 "#PWR022" H 1200 3450 50  0001 C CNN
+F 1 "+3V3" H 1215 3773 50  0000 C CNN
+F 2 "" H 1200 3600 50  0001 C CNN
+F 3 "" H 1200 3600 50  0001 C CNN
+	1    1200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3750 1200 3750
+Wire Wire Line
+	1200 3750 1200 3600
 $EndSCHEMATC

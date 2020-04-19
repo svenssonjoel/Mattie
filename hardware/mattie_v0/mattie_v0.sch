@@ -167,4 +167,48 @@ Wire Wire Line
 	3950 3850 5550 3850
 Wire Wire Line
 	5550 3950 3950 3950
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EA5CE8F
+P 7850 5200
+F 0 "H3" H 7950 5246 50  0000 L CNN
+F 1 "MountingHole" H 7950 5155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7850 5200 50  0001 C CNN
+F 3 "~" H 7850 5200 50  0001 C CNN
+	1    7850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EA5CF8D
+P 7450 5200
+F 0 "H1" H 7550 5246 50  0000 L CNN
+F 1 "MountingHole" H 7550 5155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7450 5200 50  0001 C CNN
+F 3 "~" H 7450 5200 50  0001 C CNN
+	1    7450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EA5D0B7
+P 7450 5450
+F 0 "H2" H 7550 5496 50  0000 L CNN
+F 1 "MountingHole" H 7550 5405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7450 5450 50  0001 C CNN
+F 3 "~" H 7450 5450 50  0001 C CNN
+	1    7450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EA5D2F7
+P 7850 5450
+F 0 "H4" H 7950 5496 50  0000 L CNN
+F 1 "MountingHole" H 7950 5405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7850 5450 50  0001 C CNN
+F 3 "~" H 7850 5450 50  0001 C CNN
+	1    7850 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
