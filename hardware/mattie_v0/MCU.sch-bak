@@ -426,10 +426,6 @@ Wire Wire Line
 	8150 1850 8150 1750
 Wire Wire Line
 	8150 1750 8250 1750
-Text Label 4600 2800 2    50   ~ 0
-ADC12_IN8
-Text Label 4600 2900 2    50   ~ 0
-ADC12_IN9
 NoConn ~ 9850 5200
 $Comp
 L power:GND #PWR?
@@ -443,20 +439,6 @@ F 2 "" H 10550 4950 50  0001 C CNN
 F 3 "" H 10550 4950 50  0001 C CNN
 	1    10550 4950
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_B_Mini J?
-U 1 1 5E9CE687
-P 10150 5400
-AR Path="/5E994520/5E9CE687" Ref="J?"  Part="1" 
-AR Path="/5E9881B4/5E9CE687" Ref="J2"  Part="1" 
-F 0 "J2" H 9920 5297 50  0000 R CNN
-F 1 "USB_B_Mini" H 9920 5388 50  0000 R CNN
-F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 10300 5350 50  0001 C CNN
-F 3 "~" H 10300 5350 50  0001 C CNN
-F 4 " 151-1206-1-ND " H 10150 5400 50  0001 C CNN "OrderN"
-	1    10150 5400
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	10250 5000 10250 4850
@@ -473,8 +455,6 @@ Text Label 9850 5300 2    50   ~ 0
 MCU_USB_DM
 Text Label 9850 5400 2    50   ~ 0
 MCU_USB_DP
-Text HLabel 9450 5600 0    50   Input ~ 0
-MCU_USB_VBUS
 $Comp
 L Device:R_Small R?
 U 1 1 5E9D3D5E
@@ -880,38 +860,24 @@ Text Label 7100 1500 0    50   ~ 0
 GPIO7
 Text HLabel 7100 2850 2    50   Input ~ 0
 SPI_SS
+Text HLabel 9450 5600 0    50   Input ~ 0
+MCU_USB_VBUS
 $Comp
-L Device:C_Small C?
-U 1 1 5EA6712A
-P 9600 5800
-AR Path="/5E994520/5EA6712A" Ref="C?"  Part="1" 
-AR Path="/5E9881B4/5EA6712A" Ref="C25"  Part="1" 
-F 0 "C25" H 9692 5846 50  0000 L CNN
-F 1 "4.7u" H 9692 5755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9600 5800 50  0001 C CNN
-F 3 "~" H 9600 5800 50  0001 C CNN
-F 4 " 346-CM105X5R475M25AT " H 9600 5800 50  0001 C CNN "OrderN"
-	1    9600 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR032
-U 1 1 5EA6A257
-P 9600 6000
-F 0 "#PWR032" H 9600 5750 50  0001 C CNN
-F 1 "GND" H 9605 5827 50  0000 C CNN
-F 2 "" H 9600 6000 50  0001 C CNN
-F 3 "" H 9600 6000 50  0001 C CNN
-	1    9600 6000
-	1    0    0    -1  
+L Connector:USB_B_Mini J?
+U 1 1 5E9CE687
+P 10150 5400
+AR Path="/5E994520/5E9CE687" Ref="J?"  Part="1" 
+AR Path="/5E9881B4/5E9CE687" Ref="J2"  Part="1" 
+F 0 "J2" H 9920 5297 50  0000 R CNN
+F 1 "USB_B_Mini" H 9920 5388 50  0000 R CNN
+F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 10300 5350 50  0001 C CNN
+F 3 "~" H 10300 5350 50  0001 C CNN
+F 4 " 151-1206-1-ND " H 10150 5400 50  0001 C CNN "OrderN"
+	1    10150 5400
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9600 6000 9600 5900
-Wire Wire Line
-	9850 5600 9600 5600
-Wire Wire Line
-	9600 5600 9600 5700
-Connection ~ 9600 5600
-Wire Wire Line
-	9600 5600 9450 5600
+	9450 5600 9850 5600
+NoConn ~ 4600 2800
+NoConn ~ 4600 2900
 $EndSCHEMATC

@@ -84,19 +84,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 5050 9050 5050
 Connection ~ 9050 5050
-Text HLabel 2650 2700 0    50   Input ~ 0
-5V
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5E9E8811
-P 2800 2700
-F 0 "#FLG0101" H 2800 2775 50  0001 C CNN
-F 1 "PWR_FLAG" H 2800 2873 50  0000 C CNN
-F 2 "" H 2800 2700 50  0001 C CNN
-F 3 "~" H 2800 2700 50  0001 C CNN
-	1    2800 2700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Linear:MCP1826S U4
 U 1 1 5E9E9D14
@@ -195,23 +182,7 @@ F 3 "" H 4250 2550 50  0001 C CNN
 	1    4250 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 2700 4250 2600
 Connection ~ 4250 2700
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5E9F395D
-P 4250 2600
-F 0 "#FLG0102" H 4250 2675 50  0001 C CNN
-F 1 "PWR_FLAG" V 4250 2728 50  0000 L CNN
-F 2 "" H 4250 2600 50  0001 C CNN
-F 3 "~" H 4250 2600 50  0001 C CNN
-	1    4250 2600
-	0    1    1    0   
-$EndComp
-Connection ~ 4250 2600
-Wire Wire Line
-	4250 2600 4250 2550
 Wire Wire Line
 	4350 3700 4100 3700
 $Comp
@@ -225,22 +196,6 @@ F 3 "" H 4350 3550 50  0001 C CNN
 	1    4350 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 3700 4350 3600
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5E9F74F1
-P 4350 3600
-F 0 "#FLG0103" H 4350 3675 50  0001 C CNN
-F 1 "PWR_FLAG" V 4350 3728 50  0000 L CNN
-F 2 "" H 4350 3600 50  0001 C CNN
-F 3 "~" H 4350 3600 50  0001 C CNN
-	1    4350 3600
-	0    1    1    0   
-$EndComp
-Connection ~ 4350 3600
-Wire Wire Line
-	4350 3600 4350 3550
 Text HLabel 2250 3700 0    50   Input ~ 0
 REG1V2_ON
 Wire Wire Line
@@ -1496,12 +1451,8 @@ Wire Wire Line
 	2350 3700 3200 3700
 Wire Wire Line
 	4100 3800 5050 3800
-Wire Wire Line
-	2650 2700 2800 2700
 Connection ~ 2800 2700
 Connection ~ 3100 2700
-Text HLabel 3200 3800 0    50   Input ~ 0
-5V
 $Comp
 L Device:C_Small C?
 U 1 1 5E9CDDC4
@@ -1547,8 +1498,6 @@ F 4 " 963-TMK107ABJ225MA-T " H 2950 4850 50  0001 C CNN "OrderN"
 	1    2950 4850
 	1    0    0    -1  
 $EndComp
-Text HLabel 2800 4650 0    50   Input ~ 0
-5V
 $Comp
 L power:GND #PWR0109
 U 1 1 5E9CEF40
@@ -1628,16 +1577,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5EA8DFE6
-P 1650 2800
-F 0 "J1" H 1758 2981 50  0000 C CNN
-F 1 "5V" H 1758 2890 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2800 50  0001 C CNN
-F 3 "~" H 1650 2800 50  0001 C CNN
-	1    1650 2800
+P 1850 2700
+F 0 "J1" H 1958 2881 50  0000 C CNN
+F 1 "5V" H 1958 2790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 2700 50  0001 C CNN
+F 3 "~" H 1850 2700 50  0001 C CNN
+	1    1850 2700
 	1    0    0    -1  
 $EndComp
-Text HLabel 2000 2800 2    50   Input ~ 0
-5V
 $Comp
 L power:GND #PWR0113
 U 1 1 5EA52020
@@ -1649,21 +1596,105 @@ F 3 "" H 3700 3100 50  0001 C CNN
 	1    3700 3100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2200 2800 2050 2800
+Text HLabel 1450 1700 1    50   Input ~ 0
+5V
+Wire Wire Line
+	1700 2000 1450 2000
+Wire Wire Line
+	1450 1800 1450 1700
 $Comp
-L power:GND #PWR033
-U 1 1 5EA8F18C
-P 2000 2950
-F 0 "#PWR033" H 2000 2700 50  0001 C CNN
-F 1 "GND" H 2005 2777 50  0000 C CNN
-F 2 "" H 2000 2950 50  0001 C CNN
-F 3 "" H 2000 2950 50  0001 C CNN
-	1    2000 2950
-	1    0    0    -1  
+L Switch:SW_SPDT SW?
+U 1 1 5EA4044B
+P 1900 1900
+AR Path="/5E994520/5EA4044B" Ref="SW?"  Part="1" 
+AR Path="/5E9881B4/5EA4044B" Ref="SW?"  Part="1" 
+AR Path="/5E988213/5EA4044B" Ref="SW2"  Part="1" 
+F 0 "SW2" H 1975 1725 50  0000 C CNN
+F 1 "USB_POWER" H 1925 2100 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1900 1900 50  0001 C CNN
+F 3 "~" H 1900 1900 50  0001 C CNN
+F 4 "401-2016-1-ND " H 1900 1900 50  0001 C CNN "OrderN"
+	1    1900 1900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2000 2950 2000 2900
+	1700 1800 1450 1800
 Wire Wire Line
-	2000 2900 1850 2900
+	2400 3050 2400 2950
+$Comp
+L Device:C_Small C?
+U 1 1 5EA4045C
+P 2400 2850
+AR Path="/5E994520/5EA4045C" Ref="C?"  Part="1" 
+AR Path="/5E9881B4/5EA4045C" Ref="C?"  Part="1" 
+AR Path="/5E988213/5EA4045C" Ref="C25"  Part="1" 
+F 0 "C25" H 2492 2896 50  0000 L CNN
+F 1 "4.7u" H 2492 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2400 2850 50  0001 C CNN
+F 3 "~" H 2400 2850 50  0001 C CNN
+F 4 " 346-CM105X5R475M25AT " H 2400 2850 50  0001 C CNN "OrderN"
+	1    2400 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 2000
+Text Label 3200 3800 2    50   ~ 0
+5V_IN
+Text Label 2800 4650 2    50   ~ 0
+5V_IN
+Text Label 2350 1900 0    50   ~ 0
+5V_IN
 Wire Wire Line
-	2000 2800 1850 2800
+	2050 2700 2150 2700
+Wire Wire Line
+	2400 2750 2400 2700
+Connection ~ 2400 2700
+Wire Wire Line
+	2400 2700 2800 2700
+Wire Wire Line
+	2800 3050 2400 3050
+Connection ~ 2800 3050
+Wire Wire Line
+	2400 3050 2200 3050
+Wire Wire Line
+	2200 2800 2200 3050
+Connection ~ 2400 3050
+Wire Wire Line
+	2100 1900 2200 1900
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EA83F67
+P 2200 1900
+F 0 "#FLG0101" H 2200 1975 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 2073 50  0000 C CNN
+F 2 "" H 2200 1900 50  0001 C CNN
+F 3 "~" H 2200 1900 50  0001 C CNN
+	1    2200 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 1900
+Wire Wire Line
+	2200 1900 2350 1900
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5EA84231
+P 2300 2700
+F 0 "#FLG0104" H 2300 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 2873 50  0000 C CNN
+F 2 "" H 2300 2700 50  0001 C CNN
+F 3 "~" H 2300 2700 50  0001 C CNN
+	1    2300 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 2700
+Wire Wire Line
+	2150 2700 2300 2700
+Connection ~ 2300 2700
+Wire Wire Line
+	2300 2700 2400 2700
+Wire Wire Line
+	4250 2550 4250 2700
+Wire Wire Line
+	4350 3550 4350 3700
 $EndSCHEMATC
