@@ -1577,12 +1577,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5EA8DFE6
-P 1850 2700
-F 0 "J1" H 1958 2881 50  0000 C CNN
-F 1 "5V" H 1958 2790 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 2700 50  0001 C CNN
-F 3 "~" H 1850 2700 50  0001 C CNN
-	1    1850 2700
+P 1600 2700
+F 0 "J1" H 1708 2881 50  0000 C CNN
+F 1 "5V" H 1708 2790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 2700 50  0001 C CNN
+F 3 "~" H 1600 2700 50  0001 C CNN
+	1    1600 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1597,7 +1597,7 @@ F 3 "" H 3700 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 2800 2050 2800
+	2200 2800 1800 2800
 Text HLabel 1450 1700 1    50   Input ~ 0
 5V
 Wire Wire Line
@@ -1646,8 +1646,6 @@ Text Label 2800 4650 2    50   ~ 0
 Text Label 2350 1900 0    50   ~ 0
 5V_IN
 Wire Wire Line
-	2050 2700 2150 2700
-Wire Wire Line
 	2400 2750 2400 2700
 Connection ~ 2400 2700
 Wire Wire Line
@@ -1687,9 +1685,6 @@ F 3 "~" H 2300 2700 50  0001 C CNN
 	1    2300 2700
 	1    0    0    -1  
 $EndComp
-Connection ~ 2150 2700
-Wire Wire Line
-	2150 2700 2300 2700
 Connection ~ 2300 2700
 Wire Wire Line
 	2300 2700 2400 2700
@@ -1697,4 +1692,33 @@ Wire Wire Line
 	4250 2550 4250 2700
 Wire Wire Line
 	4350 3550 4350 3700
+Wire Wire Line
+	1800 2700 2300 2700
+$Comp
+L Device:C_Small C?
+U 1 1 5EA1D6AA
+P 4600 4850
+AR Path="/5E9881B4/5EA1D6AA" Ref="C?"  Part="1" 
+AR Path="/5E98823A/5EA1D6AA" Ref="C?"  Part="1" 
+AR Path="/5E988213/5EA1D6AA" Ref="C26"  Part="1" 
+F 0 "C26" V 4371 4850 50  0000 C CNN
+F 1 "0.1u" V 4462 4850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 4850 50  0001 C CNN
+F 3 "~" H 4600 4850 50  0001 C CNN
+F 4 " 963-TMK107BJ104KA-T " H 4600 4850 50  0001 C CNN "Mouser"
+	1    4600 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 4750 4600 4650
+Wire Wire Line
+	4600 4650 4150 4650
+Connection ~ 4150 4650
+Wire Wire Line
+	4600 4950 4600 5050
+Wire Wire Line
+	4600 5050 4150 5050
+Connection ~ 4150 5050
+Text Label 2000 2700 1    50   ~ 0
+5V_IN
 $EndSCHEMATC
