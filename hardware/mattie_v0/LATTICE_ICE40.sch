@@ -57,7 +57,7 @@ F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 5050 5850 50 
 	4    5450 4850
 	0    1    1    0   
 $EndComp
-Text HLabel 5050 3250 0    50   Input ~ 0
+Text HLabel 4700 3250 0    50   Input ~ 0
 SPI_SS
 Text HLabel 5050 3150 0    50   Input ~ 0
 SPI_SCK
@@ -65,9 +65,9 @@ Text HLabel 5050 2950 0    50   Input ~ 0
 SPI_MISO
 Text HLabel 5050 3050 0    50   Input ~ 0
 SPI_MOSI
-Text HLabel 5050 1650 0    50   Input ~ 0
+Text HLabel 4800 1650 0    50   Input ~ 0
 RESET
-Text HLabel 6050 1650 2    50   Input ~ 0
+Text HLabel 6550 1650 2    50   Input ~ 0
 DONE
 Text HLabel 5050 1950 0    50   Input ~ 0
 DAT0
@@ -1548,4 +1548,109 @@ Wire Wire Line
 	1300 3750 1200 3750
 Wire Wire Line
 	1200 3750 1200 3600
+$Comp
+L Device:R_Small R?
+U 1 1 5EA31740
+P 4900 1450
+AR Path="/5E994520/5EA31740" Ref="R?"  Part="1" 
+AR Path="/5E9881B4/5EA31740" Ref="R?"  Part="1" 
+AR Path="/5E98823A/5EA31740" Ref="R6"  Part="1" 
+F 0 "R6" V 4800 1450 50  0000 C CNN
+F 1 "10K" V 4850 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 1450 50  0001 C CNN
+F 3 "~" H 4900 1450 50  0001 C CNN
+F 4 " 71-CRCW060310K0JNEAC " H 4900 1450 50  0001 C CNN "OrderN"
+	1    4900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR032
+U 1 1 5EA31EB6
+P 4900 1100
+F 0 "#PWR032" H 4900 950 50  0001 C CNN
+F 1 "+3V3" H 4915 1273 50  0000 C CNN
+F 2 "" H 4900 1100 50  0001 C CNN
+F 3 "" H 4900 1100 50  0001 C CNN
+	1    4900 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1650 4900 1650
+Wire Wire Line
+	4900 1350 4900 1100
+Wire Wire Line
+	4900 1550 4900 1650
+Connection ~ 4900 1650
+Wire Wire Line
+	4900 1650 4800 1650
+$Comp
+L Device:R_Small R?
+U 1 1 5EA3656D
+P 6350 1450
+AR Path="/5E994520/5EA3656D" Ref="R?"  Part="1" 
+AR Path="/5E9881B4/5EA3656D" Ref="R?"  Part="1" 
+AR Path="/5E98823A/5EA3656D" Ref="R10"  Part="1" 
+F 0 "R10" V 6250 1450 50  0000 C CNN
+F 1 "10K" V 6300 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6350 1450 50  0001 C CNN
+F 3 "~" H 6350 1450 50  0001 C CNN
+F 4 " 71-CRCW060310K0JNEAC " H 6350 1450 50  0001 C CNN "OrderN"
+	1    6350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR034
+U 1 1 5EA3694D
+P 6350 1100
+F 0 "#PWR034" H 6350 950 50  0001 C CNN
+F 1 "+3V3" H 6365 1273 50  0000 C CNN
+F 2 "" H 6350 1100 50  0001 C CNN
+F 3 "" H 6350 1100 50  0001 C CNN
+	1    6350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1650 6350 1650
+Wire Wire Line
+	6350 1650 6350 1550
+Connection ~ 6350 1650
+Wire Wire Line
+	6350 1650 6550 1650
+Wire Wire Line
+	6350 1350 6350 1100
+$Comp
+L Device:R_Small R?
+U 1 1 5EA408B3
+P 4900 3500
+AR Path="/5E994520/5EA408B3" Ref="R?"  Part="1" 
+AR Path="/5E9881B4/5EA408B3" Ref="R?"  Part="1" 
+AR Path="/5E98823A/5EA408B3" Ref="R9"  Part="1" 
+F 0 "R9" V 4800 3500 50  0000 C CNN
+F 1 "10K" V 5000 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 3500 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+F 4 " 71-CRCW060310K0JNEAC " H 4900 3500 50  0001 C CNN "OrderN"
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5EA429FE
+P 4900 3800
+F 0 "#PWR033" H 4900 3550 50  0001 C CNN
+F 1 "GND" H 4905 3627 50  0000 C CNN
+F 2 "" H 4900 3800 50  0001 C CNN
+F 3 "" H 4900 3800 50  0001 C CNN
+	1    4900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3800 4900 3600
+Wire Wire Line
+	4900 3400 4900 3250
+Wire Wire Line
+	4900 3250 4700 3250
+Wire Wire Line
+	5050 3250 4900 3250
+Connection ~ 4900 3250
 $EndSCHEMATC
