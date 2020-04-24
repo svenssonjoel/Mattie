@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.2)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
@@ -94,7 +94,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "Gerber/"))
+      (outputdirectory "../Gerber/"))
   )
 
   (net 0 "")
@@ -4524,7 +4524,7 @@
   (segment (start 134.234315 135.81) (end 138.324317 139.900002) (width 0.5) (layer B.Cu) (net 77))
   (segment (start 131.29 135.81) (end 134.234315 135.81) (width 0.5) (layer B.Cu) (net 77))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EA012B1) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EA28644) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -5436,7 +5436,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EA012AE) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EA28641) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -6027,7 +6027,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5EA012AB) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5EA2863E) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -6807,7 +6807,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In2.Cu) (tstamp 5EA012A8) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In2.Cu) (tstamp 5EA2863B) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
