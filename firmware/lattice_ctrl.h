@@ -19,6 +19,7 @@
 #define _LATTICE_CTRL_H_
 
 #include "hal.h"
+#include "ch.h"
 
 #define RESET_GPIO GPIOB
 #define RESET_PIN  6
@@ -36,7 +37,10 @@
 #define SPI_MOSI_PIN  5
 
 
-
+/* Initialize the controll interface to the FPGA (SPI + RESET + DONE) */ 
 void lattice_ctrl_init(void); 
+
+/* RESET the FPGA */
+bool lattice_ctrl_reset(void);
 
 #endif
