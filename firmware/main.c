@@ -65,6 +65,23 @@ int main(void) {
   chThdSleepMilliseconds(500);
   led_write(LED_YELLOW, 0);
 
+
+  lattice_dcdc_on(true);
+
+  led_write(LED_YELLOW, 1); 
+  while (!lattice_dcdc_pwrgd()) {
+    chThdSleepMilliseconds(1);
+  }
+  led_write(LED_YELLOW, 0);
+
+  chThdSleepMilliseconds(500);
+
+  if (!lattice_ctrl_reset()) {
+    led_write(LED_RED,1);
+  }
+  
+  
+  
   /*
    *  Main thread activity...
    */
