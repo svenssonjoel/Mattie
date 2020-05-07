@@ -89,7 +89,7 @@ endif
 #
 
 # Define project name here
-PROJECT = SYNTH_FIRMWARE
+PROJECT = MATTIE_FIRMWARE
 
 # Imported source files and paths
 CHIBIOS  := ChibiOS_19.1.3
