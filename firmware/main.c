@@ -1,5 +1,5 @@
 /*
-    Copyright 2019 Joel Svensson	svenssonjoel@yahoo.se
+    Copyright 2020 Joel Svensson	svenssonjoel@yahoo.se
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -27,12 +27,22 @@
 #include "chprintf.h"
 
 #include "led.h"
+#include "lattice_data.h"
+#include "lattice_ctrl.h"
 
 
 int main(void) {
+
   halInit();
   chSysInit();
+
+  lattice_dcdc_init();
+  lattice_ctrl_init();
+
   led_init();
+
+  
+  
   
   sduObjectInit(&SDU1);
   sduStart(&SDU1, &serusbcfg);
