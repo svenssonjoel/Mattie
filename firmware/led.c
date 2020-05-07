@@ -35,6 +35,6 @@ void led_init(void) {
 		PAL_STM32_OSPEED_HIGHEST);
 
   led_write(LED_RED, 0);
-  led_write(LED_GREEN, 1);
+  led_write(LED_GREEN, 0);
   led_write(LED_YELLOW, 0);
 }

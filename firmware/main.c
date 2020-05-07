@@ -41,13 +41,9 @@ int main(void) {
 
   led_init();
 
-  
-  
-  
   sduObjectInit(&SDU1);
   sduStart(&SDU1, &serusbcfg);
-
-
+  
   /*
    * Activates the USB driver and then the USB bus pull-up on D+.
    * Note, a delay is inserted in order to not have to disconnect the cable
@@ -59,7 +55,16 @@ int main(void) {
   usbStart(serusbcfg.usbp, &usbcfg);
   usbConnectBus(serusbcfg.usbp);
   chThdSleepMilliseconds(500);
-  
+
+  led_write(LED_RED, 1);
+  chThdSleepMilliseconds(500);
+  led_write(LED_YELLOW, 1);
+  chThdSleepMilliseconds(500);
+  led_write(LED_RED, 0);
+  led_write(LED_GREEN, 1);
+  chThdSleepMilliseconds(500);
+  led_write(LED_YELLOW, 0);
+
   /*
    *  Main thread activity...
    */
