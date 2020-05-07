@@ -15,7 +15,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <stdbool.h>
 #include "lattice_dcdc.h"
 
 void lattice_dcdc_init(void) {

@@ -15,50 +15,43 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include "lattice_data.h"
 
-#ifndef _LATTICE_DATA_H_
-#define _LATTICE_DATA_H_
+void lattice_data_direction(data_channel c, bool output) {
 
-#include "hal.h"
-
-#define D0_GPIO GPIOA
-#define D1_GPIO GPIOC
-#define A0_GPIO GPIOA
-#define A1_GPIO GPIOC
-
-#define D0_PIN0 0
-#define D0_PIN1 1
-#define D0_PIN2 2
-#define D0_PIN3 3
-#define D0_PIN4 4
-#define D0_PIN5 5
-#define D0_PIN6 6
-#define D0_PIN7 7
-
-#define D1_PIN0 0
-#define D1_PIN1 1
-#define D1_PIN2 2
-#define D1_PIN3 3
-#define D1_PIN4 4
-#define D1_PIN5 5
-#define D1_PIN6 6
-#define D1_PIN7 7
-
-#define A0_PIN0 8
-#define A0_PIN1 9
-#define A0_PIN2 10
-
-#define A1_PIN0 8
-#define A1_PIN1 9
-#define A1_PIN2 10
-
-typedef enum {
-  D0,
-  D1,
-  A0,
-  A1 
-} data_channel;
-
-void lattice_data_direction(data_channel c, bool output);
-
-#endif
+  ioportid_t id;
+  ioportmask_t mask; 
+  
+  switch(c) {
+  case D0:
+    id = D0_GPIO;
+    mask = 0xFF;
+    break;
+  case D1:
+    id = D1_GPIO;
+    mask = 0xFF;
+    break;
+  case A0:
+    id = A0_GPIO;
+    mask = 0x7;
+    break;
+  case A1:
+    id = A1_GPIO;
+    mask = 0x7;
+    break;
+  default:
+    return;
+  }
+  
+  if (output) { 
+    palSetGroupMode(id, mask, 0,
+		    PAL_MODE_OUTPUT_PUSHPULL |
+		    PAL_STM32_OSPEED_HIGHEST);
+    palWriteGroup(id, mask, 0, 0); 
+  } else {
+    palSetGroupMode(id, mask, 0,
+		    PAL_MODE_INPUT |
+		    PAL_STM32_OSPEED_HIGHEST); 
+  }
+  
+}

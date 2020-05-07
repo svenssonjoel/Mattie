@@ -129,6 +129,7 @@ CSRC = $(ALLCSRC) \
        led.c \
        lattice_dcdc.c \
        lattice_ctrl.c \
+       lattice_data.c \
        $(CHIBIOS)/os/various/syscalls.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global

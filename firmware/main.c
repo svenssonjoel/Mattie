@@ -29,6 +29,7 @@
 #include "led.h"
 #include "lattice_data.h"
 #include "lattice_ctrl.h"
+#include "lattice_dcdc.h"
 
 
 int main(void) {
