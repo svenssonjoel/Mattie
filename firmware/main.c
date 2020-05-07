@@ -40,6 +40,11 @@ int main(void) {
   lattice_dcdc_init();
   lattice_ctrl_init();
 
+  lattice_data_direction(D0,false);
+  lattice_data_direction(D1,false);
+  lattice_data_direction(A0,false);
+  lattice_data_direction(A1,false);
+  
   led_init();
 
   sduObjectInit(&SDU1);
@@ -80,8 +85,6 @@ int main(void) {
   if (!lattice_ctrl_reset()) {
     led_write(LED_RED,1);
   }
-  
-  
   
   /*
    *  Main thread activity...
