@@ -22,9 +22,9 @@
 #define LED_GREEN 1
 #define LED_YELLOW 2
 
-#define LED_RED_PIN 8
+#define LED_RED_PIN 10
 #define LED_YELLOW_PIN 9
-#define LED_GREEN_PIN 10
+#define LED_GREEN_PIN 8
 
 
 extern void led_write(int num, int state);

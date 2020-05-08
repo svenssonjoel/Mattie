@@ -78,13 +78,21 @@ int main(void) {
   while (!lattice_dcdc_pwrgd()) {
     chThdSleepMilliseconds(1);
   }
-  led_write(LED_YELLOW, 0);
 
   chThdSleepMilliseconds(500);
-
+  led_write(LED_YELLOW, 0);
+  
   if (!lattice_ctrl_reset()) {
     led_write(LED_RED,1);
+  } else {
+    for (int i = 0; i < 5; i ++) {
+      led_write(LED_YELLOW, 1);
+      chThdSleepMilliseconds(100);
+      led_write(LED_YELLOW, 0);
+      chThdSleepMilliseconds(100);
+    }
   }
+  
   
   /*
    *  Main thread activity...
